@@ -1,0 +1,99 @@
+﻿/* CSS Document */
+/* CSS Document */
+body{ min-width:300px; margin:auto; font-family:'微软雅黑', Arial;-webkit-overflow-scrolling: touch;}
+#bodyShow{ visibility:hidden;}
+article, aside, footer, header, hgroup, nav, section ,p,h1,h2,h3{display: block; margin:0px; padding:0px;}
+#body{ position:relative; z-index:999; }
+ul, li{ margin:0px; list-style:none; padding:0px;}
+.old{ position:absolute; top:100px; width:300px; text-align:center; padding:50px; line-height:25px;   border:1px solid #ccc; background:#f9f9f9; left:50%; margin-left:-150px; z-index:999999;}
+.author{  text-align:center; padding-top:50px;}
+
+@media screen and (max-width:640px){}
+body{ max-width:640px; }
+.xinren{ width:100%; margin:0 auto; color:#666; text-align:center; font:1.3em/100% '微软雅黑' Verdana, Geneva, sans-serif; vertical-align:middle; overflow:hidden;
+}
+.xinren .ren{width:25%; vertical-align: inherit; display:block; float:left;}
+.xinren .ren p{display:block; width:100%; text-align:center;position:relative; margin-top:50%; top:-1em;}
+.xiangxi ul li{ width:100%; text-align:center;}
+.xiangxi ul li .xh{  overflow:hidden; line-height:30px; font:1em/140% '微软雅黑', Geneva, sans-serif; display:none; padding:15px 15px; max-width:610px; margin:auto;}
+.xiangxi ul li .xs{ height:30px;overflow:hidden; }
+section,article{ display:block;}
+
+
+.slidingBox{ margin:auto; width:100%; overflow:hidden; position:relative;}
+.slidCon{ width:auto; width:1000%; position:relative; left:0px; }
+.slidCon div{ float:left; display:inline;}
+.slidCon div img{ float:left; width:100%;}
+.xinren .ren img{ width:100%; float:left;}
+
+.xiangxi{ width:100%; margin:0 auto; position:fixed; bottom:0px; left:0px;}
+@media screen and (max-width:380px){
+	.xinren{font:1.2em/100% '微软雅黑'}
+	.jiehun{ line-height:100px;}
+	.xiangxi ul li .xs{}
+}
+.btnLeft{ position:absolute; left:0px; top:50%; height:80px; width:80px; margin-top:-40px; background:url(../images/btn.png) no-repeat 0 0px; display:none;}
+.btnRight{ position:absolute; right:0px; top:50%; height:80px; width:80px; margin-top:-40px; background:url(../images/btn.png) no-repeat right 0px;display:none;}
+.jiehun{ line-height:40px; padding:25px;}
+.jiehun span{ line-height:22px; font-size:14px;}
+.index{ position:absolute; height:3px; width:100%; overflow:hidden;  background:rgba(0,0,0,0.2); bottom:0px;}
+.index span{ width:20%; height:3px; background:#333; display:block; position:relative;}
+.huadong{ display:none;}
+@media screen and (max-width:460px){
+	.huadong{ position:absolute; top:0px; left:0px; z-index:10000; width:100%; height:40px; line-height:40px; overflow:hidden; background:rgba(0,0,0,0.5); text-align:center; color:#FFF; display:block;}
+	.xiangxi ul li .xh_wuyu{ min-height:66px; max-height:250px; overflow-y:scroll;}
+	}
+
+/*loding*/
+#loding{ width:100%; padding-top:50px; text-align:center;}
+
+
+#jsBg{ background:#fff}
+/*红色*/
+.s1,.m1{ background:#fa2d2d; background:#fa2d2d}
+.s1 .bg2,.m1 .bg2{ background:#d80a0a; color:#FFF;}
+.s1 li.bd,.m1 li.bd{ border-bottom:1px solid #f70606; border-top:1px solid #930202;background:rgba(216,10,10,0.9);background:#d80a0a\9; }
+@media screen 
+{.s1 li.bd{ background:rgba(216,10,10,0.9)}
+ .m1 li.bd{ background:rgba(216,10,10,0.9)}
+	
+}
+.s1 .TxTcolor,.m1 .TxTcolor{ color:#f6f6f6;}
+.s1 .xiangxi ul li .xs span,.m1 .xiangxi ul li .xs span{ display:inline-block; background:url(../images/jia.png) no-repeat left 4px; line-height:30px;  padding-left:35px;}
+.s1 .jiehun,.m1 .jiehun{ text-align:center; background:url(../images/xi.png) no-repeat center top;  background-size:auto 100%;  color:#fff; text-shadow:0px 3px 10px #666; margin:10px 0px 110px; font-family:Verdana, Geneva, sans-serif}
+.m1  .xs_border_top{ border-top:1px solid #930202;box-shadow:0px -3px 10px #b90000;}
+
+/*玫红色*/
+.s2,.m2{ background:#fa2d2d; background:#ea2992}
+.s2 .bg2,.m2 .bg2{ background:#bc0468; color:#fda7d6;}
+.s2 li.bd,.m2 li.bd{ border-bottom:1px solid #eb0a84; border-top:1px solid #8d024e;background:rgba(168,3,93,0.9);background:#bc0468\9;}
+.s2 .TxTcolor,.m2 .TxTcolor{ color:#f5f5f5;}
+.s2 .xiangxi ul li .xs span,.m2 .xiangxi ul li .xs span{ display:inline-block; background:url(../images/jia2.png) no-repeat left 4px; line-height:30px;  padding-left:35px;}
+.s2 .jiehun,.m2 .jiehun{ text-align:center; background:url(../images/xi.png) no-repeat center top;  background-size:auto 100%;  color:#fff; text-shadow:0px 3px 10px #666; margin:10px 0px 110px; font-family:Verdana, Geneva, sans-serif}
+@media screen 
+{.s2 li.bd,.m2 li.bd{background:rgba(168,3,93,0.9)}}
+.m2  .xs_border_top{ border-top:1px solid #8d024e;box-shadow:0px -3px 10px #bc0167;}
+	
+
+/*草绿色*/
+.s3,.m3{ background:#55eacd;}
+.s3 .bg2,.m3 .bg2{ background:#44c5ac; color:#a9ffee;}
+.s3 li.bd,.m3 li.bd{ border-bottom:1px solid #44c5ac; border-top:1px solid #049377;background:rgba(68,197,172,1);background:#44c5ac\9;background:rgba(68,197,172,1)\9\0;}
+.s3 .TxTcolor,.m3 .TxTcolor{ color:#f6f6f6;}
+.s3 .xiangxi ul li .xs span,.m3 .xiangxi ul li .xs span{ display:inline-block; background:url(/../images/jia.png) no-repeat left 4px; line-height:30px;  padding-left:35px;}
+.s3 .jiehun,.m3 .jiehun{ text-align:center; background:url(../images/xi.png) no-repeat center top;  background-size:auto 100%;  color:#fff; text-shadow:0px 3px 10px #666; margin:10px 0px 110px; font-family:Verdana, Geneva, sans-serif}
+@media screen 
+{.s3 li.bd,.m3 li.bd{background:rgba(68,197,172,1);}}
+.m3 .xs_border_top{ border-top:1px solid #049377;box-shadow:0px -3px 10px #02a988;}
+
+/*huibai色*/
+
+.s4,.m4{ background:#ffffff;}
+.s4 .bg2,.m4 .bg2{background:#efefef; color:#333;}
+.s4 li.bd,.m4 li.bd{  border-bottom:1px solid #f5f5f5; border-top:1px solid #ccc;background:rgba(239,239,239,0.9);background:#efefef\9;background:rgba(239,239,239,0.9)\9\0}
+.s4 .TxTcolor,.m4 .TxTcolor{ color:#666;}
+.s4 .xiangxi ul li .xs span,.m4 .xiangxi ul li .xs span{ display:inline-block; background:url(../images/jia2.png) no-repeat left 4px; line-height:30px;  padding-left:35px;}
+.s4 .jiehun,.m4 .jiehun{ text-align:center; background:url(../images/xi.png) no-repeat center top;  color:#000; text-shadow:0px 3px 10px #666; margin:10px 0px 0px; padding-bottom:110px; font-family:Verdana, Geneva, sans-serif; }
+@media screen 
+{.s4 li.bd,.m4 li.bd{background:rgba(239,239,239,0.9);}}
+.m4 .xs_border_top{ border-top:1px solid #ccc;box-shadow:0px -3px 10px #dcdbdb;}
