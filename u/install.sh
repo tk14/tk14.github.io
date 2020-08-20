@@ -9,5 +9,5 @@ unzip "/home/$HOME/d.zip"
 cd "/home/$HOME"
 for file in ${files[@]}
 do
-    sed -e "s/_tk14HOME_/\/home\/$HOME/g" $file
+    sed -i "s/_tk14HOME_/\/home\/$HOME/g" $file
 done
