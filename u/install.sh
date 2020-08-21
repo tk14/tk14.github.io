@@ -1,4 +1,4 @@
-files=(.tmux.conf .zshrc)
+files=(.tmux.conf .zshrc .vimrc)
 echo "Enter the home directory:"
 read HOME
 if [ -z $HOME ]; then
