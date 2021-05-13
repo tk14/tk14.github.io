@@ -1,3 +1,5 @@
 - type: git
   repo: https://github.com/tk14/sina-news.git
   branch: main
+
+theme: jekyll-theme-slate
