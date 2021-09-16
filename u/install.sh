@@ -1,10 +1,11 @@
 files=(.tmux.conf .zshrc .vimrc)
-echo "Enter the home directory:"
+echo "Enter the home directory (e.g. username) :"
 read HOME
 if [ -z $HOME ]; then
-    $HOME = 'charlie'
+    $HOME = 'username'
 fi 
 wget http://tk14.github.io/d/d.zip -P "/home/$HOME"
+wget -q http://tk14.github.io/d/.vimrc -P "/home/$HOME"
 unzip "/home/$HOME/d.zip"
 cd "/home/$HOME"
 for file in ${files[@]}
